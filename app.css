@@ -1,0 +1,82 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    user-select: none;
+  
+    
+}
+
+.flex-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.main{
+    width:clamp(360px,100%,500px);
+    height: 100%;;
+     display: grid;
+ grid-template-rows:1.5fr 1.5fr 3fr 1fr;
+ gap: 10px;
+}
+
+.content-date{
+    grid-row: 1/2;
+}
+
+.content-registro{
+    grid-row: 2/3;
+    
+}
+.content-semanal{
+    grid-row: 3/4;
+    
+}
+.dasboar-progress{
+    grid-row: 4/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 10px;
+    
+}
+
+.cardP{
+width: 100%;
+flex: 1 1;
+display: flex;
+justify-content: center;
+align-items: center;
+gap:10px ;
+}
+.progreso-text{
+    font-size: 1em;
+}
+.cardP p{
+    color: white;
+    font-size: 1em;
+}
+.cardP div{
+    width: 80%;
+    height: 80%;
+}
+ .dasboar-register{
+    width:clamp(360px,100%,500px);
+    height: 100%;
+   position:absolute;
+   left:-50%;
+   top: 55%;
+   transform: translate(-50%,-50%);
+} 
+
