@@ -23,7 +23,7 @@ export function createExagonal() {
   for (const ele in actual) {
     const unExagano = document.createElement("div");
     unExagano.setAttribute("class", `exa-conten card${count}`);
-    unExagano.style.backgroundImage = `url('../asset/fondoGris.svg')`;
+    unExagano.style.backgroundImage = `url('./asset/fondoGris.svg')`;
     
     const hora = document.createElement("p");
     hora.textContent = `${count < 10 ? "0" : ""}${count}:00`;
@@ -33,7 +33,7 @@ export function createExagonal() {
     fragmen.appendChild(unExagano);
     
     if(value){
-      unExagano.style.backgroundImage = `url('../asset/fondo.svg')`;
+      unExagano.style.backgroundImage = `url('./asset/fondo.svg')`;
       const img = document.createElement("img");
       img.setAttribute("src", `${actual[ele].value}`);
       img.setAttribute("class", "actions-img");
@@ -67,7 +67,7 @@ function mostrarImg(unExagonSelec, hexagons, hora) {
   const next = document.querySelector(".nexus");
   if(next)next.remove()
   hexagons.forEach((hex) => (hex.style.pointerEvents = "none"));
-  unExagonSelec.style.backgroundImage = `url('../asset/fondoSelect.svg')`;
+  unExagonSelec.style.backgroundImage = `url('./asset/fondoSelect.svg')`;
   hora.style.color = "#000";
   hora.style.fontWeight = "700";
   const contenImg = document.createElement("section");
@@ -102,7 +102,7 @@ function verificarHijos(hexagons) {
 // Función para agregar la imagen seleccionada al hexágono
 function addImageToHexagon(unExagonSelec, img, hora,contenImg) {
   // Cambiar el fondo del hexágono a la imagen seleccionada
-  unExagonSelec.style.backgroundImage = `url('../asset/fondo.svg')`;
+  unExagonSelec.style.backgroundImage = `url('./asset/fondo.svg')`;
   if (unExagonSelec.children[1]) {
     unExagonSelec.children[1].remove();//eliminado si exite la imgen
   }
