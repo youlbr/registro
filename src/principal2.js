@@ -76,7 +76,7 @@ function calificar(e,unExagano, allExagono, hora,clickHandler) {
     
     botonSucces.addEventListener("click", (e) => {
       e.stopPropagation();
-      unExagano.style.backgroundImage = `url('../asset/fondoGreen.svg')`;
+      unExagano.style.backgroundImage = `url('./asset/fondoGreen.svg')`;
 
       allExagono.forEach((hex) => {
         hex.style.pointerEvents = "auto";
@@ -96,7 +96,7 @@ function calificar(e,unExagano, allExagono, hora,clickHandler) {
 
     botonFailed.addEventListener("click", (e) => {
       e.stopPropagation();
-      unExagano.style.backgroundImage = `url('../asset/fondoFailed.svg')`;
+      unExagano.style.backgroundImage = `url('./asset/fondoFailed.svg')`;
       allExagono.forEach((hex) => {
         hex.style.pointerEvents = "auto";
         hex.style.opacity = 1;
